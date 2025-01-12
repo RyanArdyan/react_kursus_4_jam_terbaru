@@ -1,0 +1,1 @@
+components adalah function yang menyimpan tampilan yang dapat dipanggil berulang kali. Mirip seperti lego yang digunakan untuk membuat tampilan
