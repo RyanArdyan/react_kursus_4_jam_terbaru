@@ -1,7 +1,9 @@
 // mengimport modul react
-import React from 'react'
+import React from 'react';
+// Link digunakan untuk perpindahan halaman
+import { Link } from 'react-router-dom';
 
-// 
+
 const Header = () => {
   return (
     <>
@@ -28,10 +30,12 @@ const Header = () => {
                 {/* Bagian bawah: Menu Navigasi */}
                 <nav className="mt-2">
                     <ul className="flex space-x-4 mb-3">
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">Tahap 1</a></li>
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">Tahap 2</a></li>
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">Tahap 3</a></li>
-                        <li><a href="#" className="text-gray-600 hover:text-blue-500">Tahap 4</a></li>
+                        {/* elemet Link digunakan untuk mengganti elemet a. Element a akan melakukan refresh browser sedangkan Link tidak melakukan refresh browse */}
+                        {/* to digunakan untuk menggantikan href, panggil rute / milik App.jsx */}
+                        <li><Link to="/" className="text-gray-600 hover:text-blue-500">Tahap 1</Link></li>
+                        <li><Link className="text-gray-600 hover:text-blue-500">Tahap 2</Link></li>
+                        <li><Link className="text-gray-600 hover:text-blue-500">Tahap 3</Link></li>
+                        <li><Link className="text-gray-600 hover:text-blue-500">Tahap 4</Link></li>
                     </ul>
                 </nav>
             </div>
