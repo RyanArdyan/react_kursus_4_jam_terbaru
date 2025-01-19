@@ -1,7 +1,12 @@
-// gunakanStatus digunakan untuk untuk membuat function getter untuk mencetak ke tampilan dan setter pada variable dan menyimpan nilai awal pada variable
+// gunakanStatus digunakan untuk untuk membuat function getter untuk mencetak ke tampilan dan setter pada variable dan mengisi nilai dan nilai awal pada variable
 import { useState } from 'react';
+// mengimpor app.css sebagai penghias
 import './App.css';
+// mengimpor setiap isi menu yaitu tahap1, tahap2 dan lain-lain
+// mengimpor komponen tampilan atau batu bata
 import Tahap1 from './tahap_1/Tahap1';
+import Tahap2 from './tahap_2/Tahap2';
+import Tahap3 from './tahap_3/Tahap3';
 // agar jika aku click link home maka ke halaman home
 // import ruteBrowser sebagai ruter, rute-rute dan rute dari reaksi ruter dom
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -20,6 +25,7 @@ function App() {
         {/* jika user di url awal maka panggil component berikut */}
         <Route path="/" element={<Tahap1/>} />
         <Route path="/tahap2" element={<Tahap2/>} />
+        <Route path="/tahap3" element={<Tahap3/>} />
       </Routes>
     </Router>
     </>

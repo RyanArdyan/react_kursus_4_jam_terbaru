@@ -1,0 +1,1 @@
+Fungsi folder assets adalah untuk menyimpan gambar, template tampilan dan lain-lain.

@@ -2,7 +2,7 @@
 import React from 'react'
 // import component header
 import Header from '../layouts/Header';
-import Food from './Food';
+import Content from './Content';
 
 const Tahap1 = () => {
     // jika ingin menulis kode javascript maka tulis diatas return
@@ -12,7 +12,11 @@ const Tahap1 = () => {
         <>
             {/* panggil component header */}
             <Header />
-            <Food />
+            
+            {/* panggil component Content */}
+            {/* aku bisa menggunakan komponen berulang kali */}
+            <Content />
+            <Content />
         </>
     )
 }

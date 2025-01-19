@@ -1,11 +1,15 @@
+// mengimpor react untuk menggunakan jsx dan membuat komponen
 import React from 'react'
 
 // rafce template
 // berisi jalankan fungsi berikut
-const Food = () => {
+const Content = () => {
     // jika ingin menulis kode javascript maka tulis diatas return
     const buah1 = "Apel";
     const buah2 = "Mangga";
+
+    const makanan1 = "Nasi Kuning";
+    const makanan2 = "Nasi Putih";
 
     // return digunakna untuk mencetak tampilan
     return (
@@ -17,8 +21,8 @@ const Food = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div className="bg-white shadow-md rounded-lg p-6 col-span-full">
                             <div className="">
-                                <h2 className="text-2xl font-semibold text-gray-800 mb-4">Daftar Vertikal</h2>
-                                <ul className="list-disc list-inside space-y-2">
+                                <h2 className="text-2xl font-semibold text-gray-800 mb-4">Daftar Buah</h2>
+                                <ul className="list-disc list-inside space-y-2 mb-5">
                                     <li>
                                         {buah1}
                                     </li>
@@ -35,4 +39,4 @@ const Food = () => {
     )
 }
 
-export default Food
+export default Content
