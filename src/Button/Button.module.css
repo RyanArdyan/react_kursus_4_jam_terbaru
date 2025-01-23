@@ -1,0 +1,13 @@
+/* tujuan di buat nya module.css adalah terkadang setiap komponen memiliki css yang berbeda jadi aku membuat module.css */
+.button_saya {
+    /* warna latar belakang */
+    background-color: hsl(200, 100%, 50%);
+    /* warna */
+    color: white;
+    /* jarak antara border dengan konten */
+    padding: 10px 20px;
+    /* sudut lengkung atau radius bingkai */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}

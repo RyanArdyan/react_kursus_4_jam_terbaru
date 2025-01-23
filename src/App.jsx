@@ -7,6 +7,7 @@ import './App.css';
 import Tahap1 from './tahap_1/Tahap1';
 import Tahap2 from './tahap_2/Tahap2';
 import Tahap3 from './tahap_3/Tahap3';
+import Tahap4 from './tahap_4/Tahap4';
 // agar jika aku click link home maka ke halaman home
 // import ruteBrowser sebagai ruter, rute-rute dan rute dari reaksi ruter dom
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -26,6 +27,7 @@ function App() {
         <Route path="/" element={<Tahap1/>} />
         <Route path="/tahap2" element={<Tahap2/>} />
         <Route path="/tahap3" element={<Tahap3/>} />
+        <Route path="/tahap4" element={<Tahap4/>} />
       </Routes>
     </Router>
     </>
